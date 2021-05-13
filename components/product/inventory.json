@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_product_inventories",
+  "info": {
+    "name": "Inventory",
+    "icon": "store-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SKU": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Stock": {
+      "type": "biginteger",
+      "required": true
+    },
+    "isSoldOut": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

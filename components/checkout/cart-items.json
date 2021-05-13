@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_cart_cart_items",
+  "info": {
+    "name": "Cart Items",
+    "icon": "money-check-alt"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

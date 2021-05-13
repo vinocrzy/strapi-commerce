@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_product_details",
+  "info": {
+    "name": "Product Details",
+    "icon": "store",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Weight": {
+      "type": "decimal"
+    }
+  }
+}

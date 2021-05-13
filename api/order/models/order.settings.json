@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "paid",
+        "unpaid",
+        "processing",
+        "completed",
+        "refunded",
+        "canceled",
+        "hold"
+      ],
+      "default": "unpaid"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "orders"
+    },
+    "Cart": {
+      "type": "component",
+      "repeatable": true,
+      "component": "checkout.cart-items"
+    },
+    "address": {
+      "type": "text"
+    },
+    "transactionId": {
+      "type": "string"
+    },
+    "Shipping": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shipping.shipping-details"
+    },
+    "userEmail": {
+      "type": "email"
+    },
+    "userPhone": {
+      "type": "biginteger"
+    },
+    "userName": {
+      "type": "string"
+    }
+  }
+}

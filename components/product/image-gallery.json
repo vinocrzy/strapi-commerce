@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_image_galleries",
+  "info": {
+    "name": "Image Gallery",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

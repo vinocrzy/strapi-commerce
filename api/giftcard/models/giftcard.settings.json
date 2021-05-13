@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "giftcards",
+  "info": {
+    "name": "Giftcard"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "promos": {
+      "via": "giftcard",
+      "collection": "promo"
+    }
+  }
+}

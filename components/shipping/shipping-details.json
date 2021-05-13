@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shipping_shipping_details_s",
+  "info": {
+    "name": "Shipping Details ",
+    "icon": "shuttle-van"
+  },
+  "options": {},
+  "attributes": {
+    "trackingCode": {
+      "type": "string",
+      "unique": true
+    },
+    "shippingProvider": {
+      "type": "enumeration",
+      "enum": [
+        "FedEx",
+        "DTDC",
+        "ECOMExpress",
+        "BlueDart",
+        "Delhivery",
+        "DHL",
+        "IndiaPost",
+        "FirstFlightCouriers",
+        "GoJavas",
+        "Shiprocket"
+      ]
+    },
+    "shippingInfo": {
+      "type": "text"
+    }
+  }
+}

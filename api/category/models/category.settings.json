@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "products": {
+      "collection": "product",
+      "via": "categories",
+      "dominant": true
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "tagLine": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/giftcards",
+      "handler": "giftcard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/giftcards/count",
+      "handler": "giftcard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/giftcards/:id",
+      "handler": "giftcard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/giftcards",
+      "handler": "giftcard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/giftcards/:id",
+      "handler": "giftcard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/giftcards/:id",
+      "handler": "giftcard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
