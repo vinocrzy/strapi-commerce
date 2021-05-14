@@ -1,0 +1,32 @@
+{
+  "name": "strapi-plugin-order-management",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "order-management",
+    "icon": "shopping-bag",
+    "description": "Description of order-management plugin."
+  },
+  "dependencies": {
+    "@buffetjs/core": "^3.3.6",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "styled-components": "^5.3.0"
+  },
+  "author": {
+    "name": "vinocrzy",
+    "email": "svkanna.g@gmail.com",
+    "url": "https://vinocrazy.com/"
+  },
+  "maintainers": [
+    {
+      "name": "vinocrzy",
+      "email": "svkanna.g@gmail.com",
+      "url": "https://vinocrazy.com/"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
